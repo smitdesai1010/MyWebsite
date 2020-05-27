@@ -1,0 +1,10 @@
+li{
+  height: 3vh;
+  padding: 15px;
+  color: white;
+  display: inline-block;
+  background-color: green;
+}
+a{
+  height: 100%;
+}

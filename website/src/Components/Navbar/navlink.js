@@ -1,9 +1,8 @@
 import React from 'react';
-import './navlink.css'
 
 function Navlink(props){
   return (
-    <li><a>{props.name}</a></li>
+    <li><a href="#">{props.name}</a></li>
   )
 }
 

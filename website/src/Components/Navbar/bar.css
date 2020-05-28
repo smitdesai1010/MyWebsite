@@ -1,10 +1,70 @@
 #bar{
-  margin: 0px;
-  padding: 0px;
-  height: 9vh;
+  margin-right: 10px;
+  height: 8vh;
   width: 100%;
-  background-color: rgb(11, 13, 15);
+  background-color: black;
   overflow: hidden;
   position: fixed;
-  flex: auto;
+  text-align:justify;
+}
+
+.hambuger,li{
+  display: inline-flex;
+}
+
+.hambuger{
+  height: inherit;
+  width: 5%;
+  float: right;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+i.fa.fa-bars::before{
+  line-height: 8vh;
+  cursor: pointer;
+  pointer-events: none;
+  display: none;
+}
+
+
+li{
+  width: 160px;
+  color: white;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 8vh;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: inherit;
+}
+
+li:hover{
+  background-color: rgba(43, 42, 42, 1);
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 640px) {
+ #bar{
+   background-color: green;
+   overflow: visible;
+ }
+
+ li{
+    display: block;
+  }
+
+ i.fa.fa-bars::before{
+   color: red;
+   pointer-events: all;
+   display: contents;
+ }
+
 }

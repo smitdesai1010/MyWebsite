@@ -1,33 +1,32 @@
-#bar{
-  margin-right: 10px;
+#bar,#list{
   height: 8vh;
   width: 100%;
   background-color: black;
-  overflow: hidden;
   position: fixed;
-  text-align:justify;
 }
 
-.hambuger,li{
-  display: inline-flex;
+#list{
+  display: flex;
+  flex-direction: row;
 }
 
 .hambuger{
+  position: relative;
+  float: left;
   height: inherit;
-  width: 5%;
+  width: 40px;
   float: right;
   color: white;
   text-align: center;
   font-size: 1.3rem;
+  pointer-events: none;
+  opacity: 0%;
 }
 
 i.fa.fa-bars::before{
   line-height: 8vh;
   cursor: pointer;
-  pointer-events: none;
-  display: none;
 }
-
 
 li{
   width: 160px;
@@ -36,6 +35,7 @@ li{
   font-size: 1.35rem;
   font-weight: 500;
   line-height: 8vh;
+  list-style: none;
   cursor: pointer;
   transition: all 0.5s;
   background-color: inherit;
@@ -52,19 +52,22 @@ a{
 
 
 @media only screen and (max-width: 640px) {
- #bar{
-   background-color: green;
-   overflow: visible;
- }
-
- li{
-    display: block;
+  #list{
+    display: none;
   }
 
- i.fa.fa-bars::before{
-   color: red;
-   pointer-events: all;
-   display: contents;
- }
+  #list.responsive{
+    height: auto;
+    display: block;
+    width: 100%;
+  }
 
+  li{
+    width: 100%;
+  }
+
+  .hambuger{
+    opacity: 100%;
+    pointer-events: all;
+  }
 }

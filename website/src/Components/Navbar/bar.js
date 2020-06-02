@@ -3,20 +3,33 @@ import './bar.css';
 import Navlink from './navlink.js';
 import 'E:/Workspace/Personal-Website/website/node_modules/font-awesome/css/font-awesome.min.css';
 
-function bar(){
-  return(
-    <ul id='bar'>
-     <Navlink name='About'/>
-     <Navlink name='Projects'/>
-     <Navlink name='Education'/>
-     <Navlink name="Let's talk"/>
+class bar extends React.Component{
 
-     <div className="hambuger">
-      <i className="fa fa-bars"></i>
-     </div>
+  addClass(){
+    var doc = document.getElementById('list');
 
-    </ul>
-  )
+    if (doc.className === '')
+     doc.className += 'responsive';
+    else
+      doc.className = '';
+  }
+
+  render(){
+    return(
+     <div id='bar'>
+        <ul id='list'>
+         <Navlink name='About'/>
+         <Navlink name='Projects'/>
+         <Navlink name='Education'/>
+         <Navlink name="Let's talk"/>
+        </ul>
+
+         <a className="hambuger" onClick={this.addClass}>
+          <i className="fa fa-bars"></i>
+         </a>
+      </div>
+    )
+  }
 }
 
 export default bar;

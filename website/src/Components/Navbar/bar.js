@@ -18,6 +18,7 @@ class bar extends React.Component{
     return(
      <div id='bar'>
         <ul id='list'>
+         <Navlink name='Home'/>
          <Navlink name='About'/>
          <Navlink name='Projects'/>
          <Navlink name='Education'/>

@@ -1,13 +1,28 @@
-#bar,#list{
-  height: 8vh;
+#bar{
+  height: 9vh;
   width: 100%;
-  background-color: black;
+  background-color: white;
   position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#name{
+  height: inherit;
+  width: auto;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 #list{
-  display: flex;
-  flex-direction: row;
+ height: inherit;
+ width: auto;
+ display: flex;
+ flex-direction: row;
+ font-size: 1.2rem;
+ font-weight: 500;
 }
 
 .hambuger{
@@ -16,11 +31,16 @@
   height: inherit;
   width: 40px;
   float: right;
-  color: white;
+  color: black;
   text-align: center;
   font-size: 1.3rem;
   pointer-events: none;
-  opacity: 0%;
+  display: none;
+}
+
+i.fa.fa-bars{
+  padding-right: 2%;
+  width: auto;
 }
 
 i.fa.fa-bars::before{
@@ -30,10 +50,10 @@ i.fa.fa-bars::before{
 
 li{
   width: 128px;
-  color: white;
+  color: black;
   text-align: center;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: inherit;
+  font-weight: inherit;
   line-height: 8vh;
   list-style: none;
   cursor: pointer;
@@ -41,8 +61,13 @@ li{
   background-color: inherit;
 }
 
+#name li{
+  width: 170px;
+  pointer-events: none;
+}
+
 li:hover{
-  background-color: rgba(43, 42, 42, 1);
+  background-color: hsl(0, 13%, 83%);
 }
 
 a{
@@ -52,6 +77,10 @@ a{
 
 
 @media only screen and (max-width: 640px) {
+  #bar{
+    justify-content: space-between;
+  }
+
   #list{
     display: none;
   }
@@ -67,7 +96,8 @@ a{
   }
 
   .hambuger{
-    opacity: 100%;
+    display:contents;
     pointer-events: all;
   }
+
 }

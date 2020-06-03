@@ -17,11 +17,14 @@ class bar extends React.Component{
   render(){
     return(
      <div id='bar'>
+        <ul id='name'>
+         <Navlink name='Smit Desai'/>
+        </ul>
+
         <ul id='list'>
          <Navlink name='Home'/>
          <Navlink name='About'/>
          <Navlink name='Projects'/>
-         <Navlink name='Education'/>
          <Navlink name="Let's talk"/>
         </ul>
 

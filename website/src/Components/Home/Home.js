@@ -8,7 +8,7 @@ class Home extends React.Component{
       <div className='home'>
          <div className='text'>
            <p>Hey! Bienvenue</p>
-           <p>I am Smit Desai</p>
+           <p>I am Smit</p>
          </div>
       </div>
     )

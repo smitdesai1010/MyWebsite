@@ -1,7 +1,7 @@
 #bar{
-  height: 9vh;
+  height: 8.5vh;
   width: 100%;
-  background-color: white;
+  background-color: rgb(228, 235, 216);
   position: fixed;
   z-index: 2;
   display: flex;
@@ -12,7 +12,7 @@
 #name{
   height: inherit;
   width: auto;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 800;
 }
 
@@ -21,7 +21,7 @@
  width: auto;
  display: flex;
  flex-direction: row;
- font-size: 1.2rem;
+ font-size: 1.5rem;
  font-weight: 500;
 }
 
@@ -33,7 +33,7 @@
   float: right;
   color: black;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   pointer-events: none;
   display: none;
 }
@@ -59,6 +59,11 @@ li{
   cursor: pointer;
   transition: all 0.5s;
   background-color: inherit;
+}
+
+a{
+  font-family: 'Oswald';
+  font-size: inherit;
 }
 
 #name li{

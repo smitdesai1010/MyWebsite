@@ -1,0 +1,9 @@
+#contact{
+  height: 50vh;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}

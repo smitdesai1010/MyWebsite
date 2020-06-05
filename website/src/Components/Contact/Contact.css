@@ -7,3 +7,15 @@
   display: flex;
   flex-direction: column;
 }
+
+#text{
+  box-sizing: border-box;
+  text-align: center;
+  transform: translateY(10vh);
+}
+
+#icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

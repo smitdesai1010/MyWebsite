@@ -6,7 +6,7 @@ class Contact extends React.Component{
   render(){
     return (
        <div id='contact'>
-         <h2 id='text'>Hey</h2>
+         <h2 id='text'>Let's Connect</h2>
 
          <div className='icons'>
           <Icon name='linkedin' href='https://www.linkedin.com/in/smitdesai1010/'/>

@@ -30,7 +30,7 @@ class bar extends React.Component{
         <ul id='list'>
          <Navlink name='Home' href='#home'/>
          <Navlink name='About' href='#about'/>
-         <Navlink name='Projects' href='#projects'/>
+         <Navlink name='Projects' href='#project'/>
          <Navlink name="Let's talk" href='#contact'/>
         </ul>
 

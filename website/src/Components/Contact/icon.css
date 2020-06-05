@@ -1,19 +1,25 @@
 .links{
   margin-left: 1.5vw;
-  height: 4.5vh;
+  height: 7.5vh;
   width: auto;
   cursor: pointer;
   pointer-events: all;
 }
 
-.fa{
+.icon{
   color: white;
   height: auto;
   width: auto;
-  font-size: 4.5vh;
+  font-size: 7.5vh;
   transition: all 0.5s;
 }
 
-.fa:hover{
-  transform: scale(1.3);
+.icon:hover{
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 640px) {
+  .links{
+    margin-left: 3vw;
+  }
 }

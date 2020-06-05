@@ -1,7 +1,7 @@
 #bar{
   height: 8vh;
   width: 100%;
-  background-color: rgb(249, 249, 249);
+  background-color: rgba(249, 249, 249, 1);
   position: fixed;
   z-index: 2;
   display: flex;

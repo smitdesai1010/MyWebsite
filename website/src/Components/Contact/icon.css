@@ -1,5 +1,19 @@
-h1{
+.links{
+  margin-left: 1.5vw;
+  height: 4.5vh;
+  width: auto;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.fa{
   color: white;
   height: auto;
-  justify-content: center;
+  width: auto;
+  font-size: 4.5vh;
+  transition: all 0.5s;
+}
+
+.fa:hover{
+  transform: scale(1.3);
 }

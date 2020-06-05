@@ -11,11 +11,11 @@
 #text{
   box-sizing: border-box;
   text-align: center;
-  transform: translateY(10vh);
+  //transform: translateY(10vh);
 }
 
-#icons{
+.icons{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }

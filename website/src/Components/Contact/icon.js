@@ -1,9 +1,13 @@
 import React from 'react'
 import './icon.css'
+import 'E:/Workspace/Personal-Website/website/node_modules/font-awesome/css/font-awesome.min.css';
 
-function Icon(){
+
+function Icon(props){
   return(
-     <h1>Hey</h1>
+     <a className='links' href={props.href} target="_blank">
+      <i className={"fa fa-"+props.name}></i>
+     </a>
   )
 }
 

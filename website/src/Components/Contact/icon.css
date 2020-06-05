@@ -1,6 +1,6 @@
 .links{
   margin-left: 1.5vw;
-  height: 7.5vh;
+  height: 6.5vh;
   width: auto;
   cursor: pointer;
   pointer-events: all;
@@ -10,7 +10,7 @@
   color: white;
   height: auto;
   width: auto;
-  font-size: 7.5vh;
+  font-size: 6.5vh;
   transition: all 0.5s;
 }
 

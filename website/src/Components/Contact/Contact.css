@@ -1,17 +1,36 @@
 #contact{
+  position: absolute;
   height: 50vh;
   width: 100%;
   color: white;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: #253031;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
 #text{
+  margin-bottom: 10vh;
+  padding-top: 8vh;
+  height: auto;
+  width: auto;
+  position: relative;
   box-sizing: border-box;
   text-align: center;
-  //transform: translateY(10vh);
+  color: #839a9c;
+  font-size: 1.7rem;
+}
+
+#text::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: -10px;
+    height: 1px;
+    width: 7.2rem;
+    background-color: currentColor;
 }
 
 .icons{

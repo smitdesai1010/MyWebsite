@@ -1,4 +1,5 @@
 #project{
+  position: relative;
   height: 180vh;
   width: 100%;
   background-color: white;
@@ -7,7 +8,9 @@
   align-items: center;
 }
 
+
 .box{
+  position: relative;
   height: 85%;
   width: 90%;
   border-radius: 20px;

@@ -48,3 +48,12 @@ p:first-child{
   font-size: 2.8rem;
   transform: translateY(20px);
 }
+
+@media only screen and (max-width: 640px) {
+ .text{
+     justify-content: flex-start;
+ }
+ p{
+   font-size: 2.2rem;
+ }
+}

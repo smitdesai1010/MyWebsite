@@ -11,7 +11,7 @@ class Card extends React.Component{
            <div className='header'>
              <div className='heading'>Encrypt.io</div>
              <ul className='technologies'>
-               <li className='tech'>C++</li>
+               <div className='tech'>C++</div>
              </ul>
            </div>
            <div className='plus'>

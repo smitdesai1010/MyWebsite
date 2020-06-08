@@ -32,7 +32,7 @@
   transform: translateY(-70px);
 }
 
-p{
+.welcometxt{
   margin: 0;
   padding: 0;
   height: auto;
@@ -44,7 +44,7 @@ p{
   text-shadow: 0.5vh 0.5vh 1vh white;
 }
 
-p:first-child{
+.welcometxt:first-child{
   font-size: 2.8rem;
   transform: translateY(20px);
 }
@@ -54,12 +54,12 @@ p:first-child{
      justify-content: flex-start;
  }
 
- p:first-child, p{
+ .welcometxt:first-child, .welcometxt{
    margin-right: auto;
    font-size: 13vw;
  }
 
- p:first-child{
+ .welcometxt:first-child{
    transform: translateY(10px);
  }
 }

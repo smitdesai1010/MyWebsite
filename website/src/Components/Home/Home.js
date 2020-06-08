@@ -7,8 +7,8 @@ class Home extends React.Component{
     return(
       <div id='home'>
          <div className='text'>
-           <p>Hey! Bienvenue</p>
-           <p>I am Smit</p>
+           <p className='welcometxt'>Hey! Bienvenue</p>
+           <p className='welcometxt'>I am Smit</p>
          </div>
       </div>
     )

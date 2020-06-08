@@ -4,19 +4,24 @@
   width: 20%;
   display: flex;
   flex-direction: column;
-  flex-grow: 3 1;
+}
+
+.visible{
+  height: auto;
+  z-index: 1;
 }
 
 .span{
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   height: 60px;
   width: 100%;
 }
 
-
 .header{
   display: flex;
   flex-direction: column;
+  width: 250%;
 }
 
 .heading{
@@ -38,7 +43,6 @@
 }
 
 .plus{
-  font-size: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,10 +51,27 @@
 .fa-plus-circle{
   height: auto;
   width: auto;
+  font-size: 3vw;
   cursor: pointer;
   transition: all 0.5s;
 }
 
+.fa-plus-circle::before{
+  font-size: 3vw;
+  height: auto;
+  width: auto;
+}
+
+/*
 .fa-plus-circle:hover{
   transform: rotate(180deg);
+}
+*/
+.hidden{
+  width: 100%;
+  z-index: 10;
+}
+
+.details{
+  font-size: 1.5vw;
 }

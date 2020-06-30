@@ -6,7 +6,8 @@ class Project extends React.Component{
   render(){
     return(
       <div id='project'>
-       <div className='box'>
+       <div className='container'>
+          <Card/>
           <Card/>
         </div>
       </div>

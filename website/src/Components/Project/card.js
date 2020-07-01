@@ -1,24 +1,23 @@
 import React from 'react'
-//import './card.css'
-import 'E:/Workspace/Personal-Website/website/node_modules/font-awesome/css/font-awesome.min.css';
+import './card.css'
 
 class Card extends React.Component{
   render(){
     return(
-      <div className="card">
-            <div className="face face1">
-                <div className="content">
-                    <img className="cardimg" src={require('./encrpt.jpg')} alt='lock'/>
-                    <h3 className="cardheading">Design</h3>
-                </div>
+      <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
+              <img className="cardimg" src={require('./Pictures/'+this.props.pic+'.jpg')}/>
+              <h3>{this.props.name}</h3>
             </div>
-            <div className="face face2">
-                <div className="content">
-                    <p className="cardinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                        <a className="cardbtn" href="#">Read More</a>
-                </div>
+
+            <div className="flip-card-back">
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+              <button>Read more</button>
             </div>
         </div>
+     </div>
     )
   }
 }

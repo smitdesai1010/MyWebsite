@@ -6,9 +6,10 @@ class Project extends React.Component{
   render(){
     return(
       <div id='project'>
-       <div className='container'>
-          <Card/>
-          <Card/>
+       <div className='box'>
+          <Card name='Encrpt.io' pic='encrpt'/>
+          <Card name='Encrpt.io' pic='encrpt'/>
+          <Card name='Encrpt.io' pic='encrpt'/>
         </div>
       </div>
     )

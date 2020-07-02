@@ -1,0 +1,17 @@
+{
+  "projects": [
+      {
+        "name": "Encrpt.io",
+        "pic": "encrpt",
+        "info": "Encrpt is very good",
+        "tech": "C++"
+      },
+
+      {
+        "name": "Tic-Tac-Toe.AI",
+        "pic": "crosszero1",
+        "info": "Tic is very good",
+        "tech": "C++"
+      }
+  ]
+}

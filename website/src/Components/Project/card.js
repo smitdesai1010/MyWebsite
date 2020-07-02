@@ -2,15 +2,9 @@ import React from 'react'
 import './card.css'
 
 class Card extends React.Component{
-
-  toggle(e){
-    //alert(e.target)
-    e.target.classList.add('clicked');
-  }
-
   render(){
     return(
-      <div className="flip-card" onClick={this.toggle}>
+      <div className="flip-card" onClick={"this.classList.toggle('hover')"}>
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <img className="cardimg" src={require('./Pictures/'+this.props.pic+'.jpg')}/>

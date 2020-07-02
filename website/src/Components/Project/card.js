@@ -3,8 +3,9 @@ import './card.css'
 
 class Card extends React.Component{
 
-  toggle(){
-    alert('ge')
+  toggle(e){
+    //alert(e.target)
+    e.target.classList.add('clicked');
   }
 
   render(){

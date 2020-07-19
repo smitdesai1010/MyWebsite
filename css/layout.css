@@ -58,7 +58,7 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   font: 90px/1.1em 'opensans-bold', sans-serif;
+   font: 1.1em 'opensans-bold', sans-serif;
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
@@ -191,26 +191,32 @@ ul#nav li.current a { color: #F06000; }
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
+   display: flex;
+   justify-content: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
 }
 
 #about a, #about a:visited  { color: #fff; }
 #about a:hover, #about a:focus { color: #11ABB0; }
 
 #about h2 {
-   font: 22px/30px 'opensans-bold', sans-serif;
+   font: 2vw; 'opensans-bold', sans-serif;
    color: #fff;
    margin-bottom: 12px;
+   text-align: center;
 }
 #about p {
    line-height: 30px;
    color: #7A7A7A;
 }
-#about .profile-pic {
-   position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
-}
+
 #about .contact-details { width: 41.66667%; }
 #about .download {
    width: 58.33333%;
@@ -225,9 +231,16 @@ ul#nav li.current a { color: #F06000; }
    background: #fff;
    color: #2B2B2B;
 }
+
 #about .download .button i {
    margin-right: 15px;
    font-size: 20px;
+}
+
+.download p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

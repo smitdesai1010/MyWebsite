@@ -5,3 +5,16 @@
 .margin{
   margin-bottom: 2em;
 }
+
+.portfolio-item{
+  height: 350px;
+  width: 350px;
+}
+
+.display{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

@@ -18,7 +18,11 @@ TxtRotate.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<h2 class="wrap">'+this.txt+'.</h2>';
+  var info = 'class="wrap" style="color:rgb(101, 101, 101)"'
+
+  this.el.innerHTML = '<h2 '+info+' >'+this.txt+'.</h2>';
+
+
 
   var that = this;
   var delta = 300 - Math.random() * 100;

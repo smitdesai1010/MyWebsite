@@ -349,7 +349,7 @@
 
    /* header styles
    -------------------------------------------------------------------- */
-   header .banner { padding-top: 24px; }
+   header .banner { position: relative; bottom: 70px;}
    header .banner-text h1 {
       font: 40px/1.4em 'opensans-bold', sans-serif;
       margin: 0 auto 24px auto;
